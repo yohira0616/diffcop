@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "diffcop"
+require 'diffcop'
 
-Diffcop.execute
+Diffcop::Executor.new.execute
