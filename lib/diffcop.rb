@@ -5,7 +5,11 @@ module Diffcop
   class Executor
     def execute
       diff_rb_files = rb_files(diff_files)
-      puts `bundle exec rubocop -a #{diff_rb_files}` if diff_rb_files != ''
+      if diff_rb_files == ''
+        puts 'No Diff from master branch.'
+      else
+        puts `bundle exec rubocop -a #{diff_rb_files}` if diff_rb_files != ''
+      end
     end
 
     private
