@@ -1,15 +1,17 @@
 # Diffcop
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/diffcop`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Apply rubocop only diff from master.  
+We should KEEP our project 0 result rubocop points out.  
+Actually,however,you face projects which rubocop become angry more than 10000 times.  
+Then,you should KAIZEN your project step by step.  
+May this help you.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'diffcop'
+gem 'diffcop' require: false
 ```
 
 And then execute:
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`bundle exec diffcop`
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/diffcop.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yohira0616/diffcop.
 
 
 ## License
