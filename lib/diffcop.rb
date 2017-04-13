@@ -6,7 +6,7 @@ module Diffcop
     def execute
       diff_rb_files = rb_files(diff_files)
       if diff_rb_files == ''
-        puts 'No Diff from master branch.'
+        puts 'No diff from master branch.'
       else
         puts `bundle exec rubocop -a #{diff_rb_files}` if diff_rb_files != ''
       end
@@ -19,7 +19,7 @@ module Diffcop
     end
 
     def rb_files(diff_files)
-      diff_files.split('\n').grep(%r{^/app/.*(\.rb)$}).join(' ')
+      diff_files.split('\n').grep(%r{^app/.*(\.rb)$}).join(' ')
     end
   end
 end
