@@ -15,7 +15,7 @@ module Diffcop
     end
 
     def rb_files(diff_files)
-      diff_files.split('\n').grep(%r{^app/.*(\.rb)$}).join(' ')
+      diff_files.split('\n').grep(%r{^/app/.*(\.rb)$}).join(' ')
     end
   end
 end
