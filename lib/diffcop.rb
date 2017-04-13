@@ -1,5 +1,7 @@
 require "diffcop/version"
 
 module Diffcop
-  # Your code goes here...
+  def self.execute
+    # TODO: imolements
+  end
 end
