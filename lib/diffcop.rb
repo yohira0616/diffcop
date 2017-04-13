@@ -1,8 +1,8 @@
 require 'diffcop/version'
 
 module Diffcop
+  # Execute Rubocop to git diff
   class Executor
-
     def execute
       diff_rb_files = rb_files(diff_files)
       puts `bundle exec rubocop -a #{diff_rb_files}` if diff_rb_files != ''
