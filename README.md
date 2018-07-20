@@ -11,7 +11,7 @@ May this help you.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'diffcop' require: false
+gem 'diffcop', require: false
 ```
 
 And then execute:
